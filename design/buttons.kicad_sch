@@ -1,0 +1,4018 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9a292944-6668-47a2-b26a-6f965f4495c6")
+	(paper "A4")
+	(title_block
+		(title "DMX Controller")
+		(rev "A")
+		(company "Hinkle Inc.")
+	)
+	(lib_symbols
+		(symbol "Device:D"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 134.62 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08ad9781-2497-4626-b9ca-1dd090667d49")
+	)
+	(junction
+		(at 137.16 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f6217c8-97b5-43f5-acc1-a6d18d8cbab7")
+	)
+	(junction
+		(at 134.62 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19b965db-794c-4d75-a7d9-eb1f83c97e4c")
+	)
+	(junction
+		(at 172.72 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a252be5-5903-4084-8361-164523470b08")
+	)
+	(junction
+		(at 134.62 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b196940-4258-4391-b075-ac4ca39c46d7")
+	)
+	(junction
+		(at 152.4 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f104502-cd4f-4824-9595-c29d61d664bf")
+	)
+	(junction
+		(at 172.72 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c93b5fc-a5a0-4200-9c72-736e573a9815")
+	)
+	(junction
+		(at 170.18 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ecb7007-6b0e-49f7-9831-adf0b49747a9")
+	)
+	(junction
+		(at 154.94 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b004c40-76b7-40a3-aead-e08f8b982169")
+	)
+	(junction
+		(at 137.16 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f70e5c6-850d-48de-acc9-78d8e96ea271")
+	)
+	(junction
+		(at 152.4 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7092a04f-21cc-45dd-8669-45e4a52e9155")
+	)
+	(junction
+		(at 154.94 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7394af51-4f0c-4d6c-aeb7-0f71f315eaf9")
+	)
+	(junction
+		(at 170.18 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83be4ddd-35a9-43e7-a3bc-cf3f3f66c2b1")
+	)
+	(junction
+		(at 172.72 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85e2155a-6074-47e0-9df5-7e7c681c5a4c")
+	)
+	(junction
+		(at 152.4 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "892da1b7-8d6e-486d-95b9-019f28480f40")
+	)
+	(junction
+		(at 154.94 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1206dcc-e8aa-4f3e-90ac-106b5bd4beb9")
+	)
+	(junction
+		(at 119.38 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1ee11dc-d9b3-44af-98f5-f80acec5f456")
+	)
+	(junction
+		(at 170.18 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a43979ac-3c58-4fc9-bdfb-e3350b59a772")
+	)
+	(junction
+		(at 170.18 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b32dd7e2-b4f0-4732-af72-42ee7fe96767")
+	)
+	(junction
+		(at 152.4 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcc4f4a3-135b-4c9a-a3bf-c83e3ffc0f87")
+	)
+	(junction
+		(at 119.38 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c41184a1-1353-4517-93dd-6d18b8904eb8")
+	)
+	(junction
+		(at 119.38 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8d9b1fe-3e0e-4016-beec-10696f0d4495")
+	)
+	(junction
+		(at 137.16 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6def504-1aa4-4218-b198-7bc858101e3b")
+	)
+	(junction
+		(at 134.62 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fadfbb12-cf3d-45b2-a6a2-f1fc5384cfe2")
+	)
+	(wire
+		(pts
+			(xy 119.38 67.31) (xy 119.38 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02679270-3a83-4539-ab9a-8c37049965f6")
+	)
+	(wire
+		(pts
+			(xy 175.26 57.15) (xy 175.26 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06e35ad0-5d63-4b19-afe0-5d54c5e15232")
+	)
+	(wire
+		(pts
+			(xy 139.7 82.55) (xy 139.7 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba70a3f-e0af-4d8c-bc52-fd257c8c49e1")
+	)
+	(wire
+		(pts
+			(xy 152.4 46.99) (xy 152.4 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bd0ac6f-354f-408a-be8c-b9d11879ffc1")
+	)
+	(wire
+		(pts
+			(xy 170.18 107.95) (xy 170.18 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c77f6b0-56ce-4257-900f-900865aa9f8f")
+	)
+	(wire
+		(pts
+			(xy 172.72 143.51) (xy 175.26 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1487005f-d287-46c8-b3d8-c0258d2aed03")
+	)
+	(wire
+		(pts
+			(xy 170.18 133.35) (xy 170.18 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14a99d13-1f0e-4e7e-b327-3652ffd6b29a")
+	)
+	(wire
+		(pts
+			(xy 177.8 57.15) (xy 175.26 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d2a126-928a-4c76-8259-66eeb37af5ec")
+	)
+	(wire
+		(pts
+			(xy 177.8 133.35) (xy 175.26 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "160d45ea-df72-452d-8c62-33dbccc21e00")
+	)
+	(wire
+		(pts
+			(xy 124.46 107.95) (xy 121.92 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16e34d1a-6054-484c-ae47-c07141025d35")
+	)
+	(wire
+		(pts
+			(xy 121.92 107.95) (xy 121.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc1ed9e-8193-46f6-bcc9-7849423104fe")
+	)
+	(wire
+		(pts
+			(xy 119.38 143.51) (xy 119.38 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea48c06-a6e5-459d-998b-3d362d348956")
+	)
+	(wire
+		(pts
+			(xy 137.16 148.59) (xy 137.16 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d972c7-dd8b-42ce-9019-f438636b5b16")
+	)
+	(wire
+		(pts
+			(xy 119.38 118.11) (xy 121.92 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22cee00d-e06d-4169-955c-5b160dd34144")
+	)
+	(wire
+		(pts
+			(xy 175.26 67.31) (xy 172.72 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d0a46f-4e0e-425c-8d36-c6a6afd6df18")
+	)
+	(wire
+		(pts
+			(xy 107.95 46.99) (xy 134.62 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281d741d-176e-420c-956a-201154414e3f")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 119.38 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b319fd-13cc-4cbf-b35e-245f9e301304")
+	)
+	(wire
+		(pts
+			(xy 160.02 133.35) (xy 157.48 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bb8ad7c-6d91-49f3-b109-6a61ca5a2e10")
+	)
+	(wire
+		(pts
+			(xy 170.18 97.79) (xy 187.96 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c484959-9696-434e-943d-b0d941333afc")
+	)
+	(wire
+		(pts
+			(xy 139.7 133.35) (xy 139.7 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f30168b-69e1-42ac-8d9b-cb77c501e936")
+	)
+	(wire
+		(pts
+			(xy 152.4 72.39) (xy 152.4 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30929948-753b-43a9-a3f2-14b36890282d")
+	)
+	(wire
+		(pts
+			(xy 187.96 57.15) (xy 187.96 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31863802-e449-4d45-8e0d-be2a847a40ad")
+	)
+	(wire
+		(pts
+			(xy 121.92 133.35) (xy 121.92 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31a31381-03c5-49f8-8480-ecb0de3aa3a7")
+	)
+	(wire
+		(pts
+			(xy 160.02 57.15) (xy 157.48 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ac003b-2eb1-408d-8744-df1f23f5568c")
+	)
+	(wire
+		(pts
+			(xy 157.48 107.95) (xy 157.48 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330920f7-4902-4957-9bc2-5b5ae83d3cca")
+	)
+	(wire
+		(pts
+			(xy 154.94 118.11) (xy 157.48 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35faa9c5-8b48-4048-8330-75ee28384363")
+	)
+	(wire
+		(pts
+			(xy 134.62 123.19) (xy 152.4 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f1a13a-0738-45bd-9a09-1ffdd05340b8")
+	)
+	(wire
+		(pts
+			(xy 139.7 107.95) (xy 139.7 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c2913f3-0873-4dcd-a212-33356db9d41b")
+	)
+	(wire
+		(pts
+			(xy 121.92 92.71) (xy 119.38 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f525479-b7ed-4742-90ab-536d4fe53965")
+	)
+	(wire
+		(pts
+			(xy 142.24 57.15) (xy 139.7 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42f29e09-4b2c-410f-bd0c-c2cde1967841")
+	)
+	(wire
+		(pts
+			(xy 107.95 123.19) (xy 134.62 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "465f08b2-430b-4e20-ad60-023a2a54c4eb")
+	)
+	(wire
+		(pts
+			(xy 134.62 72.39) (xy 134.62 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a87149f-1f89-48aa-b5c0-0503a9f48632")
+	)
+	(wire
+		(pts
+			(xy 175.26 107.95) (xy 175.26 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "519dab0d-314b-4a6a-aa7a-a8eed878edbf")
+	)
+	(wire
+		(pts
+			(xy 152.4 123.19) (xy 152.4 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e0d143-1293-49e8-ac55-979959e593bf")
+	)
+	(wire
+		(pts
+			(xy 170.18 123.19) (xy 152.4 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54baa221-51b4-414f-b867-a05c5ea31c66")
+	)
+	(wire
+		(pts
+			(xy 175.26 133.35) (xy 175.26 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "569ab5bd-9132-41c8-a7f4-b9b45d95f964")
+	)
+	(wire
+		(pts
+			(xy 154.94 67.31) (xy 154.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5962cba9-c487-45e8-b470-9ccaab270444")
+	)
+	(wire
+		(pts
+			(xy 187.96 82.55) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5defaa30-5f4e-45bf-8a33-39f3ca04bc48")
+	)
+	(wire
+		(pts
+			(xy 187.96 133.35) (xy 187.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e2df360-5158-4d5d-b1d1-a50942b42bf4")
+	)
+	(wire
+		(pts
+			(xy 170.18 57.15) (xy 170.18 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5edcb53e-c1cc-4116-9f1a-7495da279a31")
+	)
+	(wire
+		(pts
+			(xy 172.72 148.59) (xy 172.72 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62177429-91de-45a2-810b-4ae0a0893e7c")
+	)
+	(wire
+		(pts
+			(xy 177.8 107.95) (xy 175.26 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c15f70-bf81-475e-8826-688de8f920e0")
+	)
+	(wire
+		(pts
+			(xy 175.26 82.55) (xy 175.26 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666ef101-8dc5-48f1-aa9f-2dd528b4eec8")
+	)
+	(wire
+		(pts
+			(xy 170.18 72.39) (xy 152.4 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "698ef664-a948-4115-82c7-05630fdbfeca")
+	)
+	(wire
+		(pts
+			(xy 154.94 143.51) (xy 157.48 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fbd9c32-d87a-4491-8bd5-f497416d0646")
+	)
+	(wire
+		(pts
+			(xy 187.96 107.95) (xy 187.96 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700828cb-93e4-4dbb-92fc-a33bd4fd09bd")
+	)
+	(wire
+		(pts
+			(xy 170.18 123.19) (xy 187.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7662d907-f9a7-484f-bdb7-248501e42028")
+	)
+	(wire
+		(pts
+			(xy 139.7 57.15) (xy 139.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aaee878-50ee-4f75-b511-3d47c115873d")
+	)
+	(wire
+		(pts
+			(xy 172.72 67.31) (xy 172.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0b418e-3ca5-4eee-8c76-3953f6e93133")
+	)
+	(wire
+		(pts
+			(xy 134.62 72.39) (xy 152.4 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dc3f5fc-047e-41fc-8c60-ec355ff86d86")
+	)
+	(wire
+		(pts
+			(xy 157.48 67.31) (xy 154.94 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843e88c3-b9b9-4224-a596-19d702161c74")
+	)
+	(wire
+		(pts
+			(xy 134.62 46.99) (xy 134.62 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85c70842-a84b-4897-b81c-7318fd162710")
+	)
+	(wire
+		(pts
+			(xy 154.94 92.71) (xy 154.94 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86dd6b97-aa15-4f81-bd1c-081bea0f5527")
+	)
+	(wire
+		(pts
+			(xy 121.92 57.15) (xy 121.92 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88611f73-82ed-43ba-befe-1191ad82ce05")
+	)
+	(wire
+		(pts
+			(xy 119.38 143.51) (xy 121.92 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8924d6f2-149d-4acb-b83e-929999712c29")
+	)
+	(wire
+		(pts
+			(xy 137.16 67.31) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b05747e-5a84-456f-acc8-a1af01cd4ad4")
+	)
+	(wire
+		(pts
+			(xy 107.95 72.39) (xy 134.62 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f11d022-54a0-4cd7-892e-420ef65629be")
+	)
+	(wire
+		(pts
+			(xy 154.94 148.59) (xy 154.94 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f45b623-331c-462d-af4d-7a8dba4c5c75")
+	)
+	(wire
+		(pts
+			(xy 157.48 82.55) (xy 157.48 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f91a76c-0937-41b1-a924-b6eed267593c")
+	)
+	(wire
+		(pts
+			(xy 124.46 133.35) (xy 121.92 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fdc51f8-3fa2-4561-a4e3-a38d38c5cb27")
+	)
+	(wire
+		(pts
+			(xy 157.48 133.35) (xy 157.48 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90dd62e1-e30f-49d7-94b1-aa730915e39d")
+	)
+	(wire
+		(pts
+			(xy 157.48 92.71) (xy 154.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "975e0f78-2c65-4345-8fd5-72826fa2a4b4")
+	)
+	(wire
+		(pts
+			(xy 121.92 67.31) (xy 119.38 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aa2c1bf-8eba-4f3c-8004-8522b8111c62")
+	)
+	(wire
+		(pts
+			(xy 134.62 123.19) (xy 134.62 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c6e159c-76ee-42d1-8d1d-8fff85b2a5fa")
+	)
+	(wire
+		(pts
+			(xy 170.18 72.39) (xy 187.96 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d6e3b11-874b-4a35-961e-c7d829b218f0")
+	)
+	(wire
+		(pts
+			(xy 142.24 82.55) (xy 139.7 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5b05d1f-dfd5-4a3c-956a-93057e3274a0")
+	)
+	(wire
+		(pts
+			(xy 172.72 92.71) (xy 172.72 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1d176b-d3dc-4794-a375-a63d11c91183")
+	)
+	(wire
+		(pts
+			(xy 160.02 107.95) (xy 157.48 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab7bae92-28e2-4972-b499-c089f68b197b")
+	)
+	(wire
+		(pts
+			(xy 154.94 143.51) (xy 154.94 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6d0998-b66b-4973-9374-fbf3703533ca")
+	)
+	(wire
+		(pts
+			(xy 119.38 148.59) (xy 119.38 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adac8c6c-56d0-4fcf-aa64-ded4ef81b1ab")
+	)
+	(wire
+		(pts
+			(xy 170.18 97.79) (xy 152.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b375ca9f-2c5a-4efe-bc87-844529b3a171")
+	)
+	(wire
+		(pts
+			(xy 172.72 143.51) (xy 172.72 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b505ed6a-0b40-473d-86e8-9d1c78575067")
+	)
+	(wire
+		(pts
+			(xy 124.46 82.55) (xy 121.92 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe8ac42-62a7-45eb-a033-5246ecd62a82")
+	)
+	(wire
+		(pts
+			(xy 142.24 133.35) (xy 139.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc395859-2445-476f-a66d-6aa320b409d1")
+	)
+	(wire
+		(pts
+			(xy 175.26 92.71) (xy 172.72 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c060a0ae-7537-4c10-8e30-b173dfac008d")
+	)
+	(wire
+		(pts
+			(xy 139.7 67.31) (xy 137.16 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d818b7-37c4-40cb-acad-274fc1a62280")
+	)
+	(wire
+		(pts
+			(xy 137.16 143.51) (xy 137.16 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c417996e-da38-4042-a94a-1fe7ed1ab175")
+	)
+	(wire
+		(pts
+			(xy 152.4 97.79) (xy 152.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43e144c-024a-4534-b394-ad5f0be3a497")
+	)
+	(wire
+		(pts
+			(xy 137.16 92.71) (xy 137.16 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6f68b92-c32c-42da-aa09-c4f9db47894a")
+	)
+	(wire
+		(pts
+			(xy 137.16 118.11) (xy 139.7 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77b4c94-0f06-4b1b-aa40-7fbd181d00a3")
+	)
+	(wire
+		(pts
+			(xy 121.92 82.55) (xy 121.92 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c79a5566-1699-4285-a121-06e3d89c5dfc")
+	)
+	(wire
+		(pts
+			(xy 170.18 46.99) (xy 187.96 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb49b726-95a2-4f0b-898b-d282a65dcbe0")
+	)
+	(wire
+		(pts
+			(xy 124.46 57.15) (xy 121.92 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6d83af-d291-4600-a765-0743b1feb4a3")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 152.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd883732-8afa-4e53-b3e3-fd4ebc2b8827")
+	)
+	(wire
+		(pts
+			(xy 170.18 46.99) (xy 152.4 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf0ba80-1503-403b-b347-e021e64debce")
+	)
+	(wire
+		(pts
+			(xy 172.72 118.11) (xy 175.26 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ded8a430-ca7f-4339-97d2-ba87a88d1a49")
+	)
+	(wire
+		(pts
+			(xy 142.24 107.95) (xy 139.7 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e363b57b-e900-46b9-9d43-6224b047c2a6")
+	)
+	(wire
+		(pts
+			(xy 139.7 92.71) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ff3152-fe7e-42d3-b0a1-7f4b40cecff7")
+	)
+	(wire
+		(pts
+			(xy 107.95 97.79) (xy 134.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9a3f84-734c-47a7-8e54-b70dcbb08a60")
+	)
+	(wire
+		(pts
+			(xy 170.18 82.55) (xy 170.18 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece76346-a868-4985-a1ad-dafe0fbb2f72")
+	)
+	(wire
+		(pts
+			(xy 160.02 82.55) (xy 157.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb40336-8a2e-4b51-b356-d7dd6e822565")
+	)
+	(wire
+		(pts
+			(xy 137.16 143.51) (xy 139.7 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef3626ce-9c89-473e-ab09-f8f82770bbf1")
+	)
+	(wire
+		(pts
+			(xy 134.62 46.99) (xy 152.4 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f01be85f-6038-4f0e-8fb0-f14bf2b46c9e")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 134.62 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f49a54f6-1ed6-47e0-9b73-e1cc1ddec5d6")
+	)
+	(wire
+		(pts
+			(xy 177.8 82.55) (xy 175.26 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5cc0d41-888b-4e6d-836c-ffb58832cddf")
+	)
+	(wire
+		(pts
+			(xy 157.48 57.15) (xy 157.48 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdbf11ed-1763-4746-8df2-d34416dfcd36")
+	)
+	(hierarchical_label "ROW3"
+		(shape input)
+		(at 107.95 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0b80d765-4fd6-419e-af34-59b1228a6d8d")
+	)
+	(hierarchical_label "COL1"
+		(shape output)
+		(at 137.16 148.59 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "164c3a8b-3210-4996-b459-955d449a7695")
+	)
+	(hierarchical_label "ROW1"
+		(shape input)
+		(at 107.95 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ceef387-453b-4fdc-abd9-e34e77de7db9")
+	)
+	(hierarchical_label "COL2"
+		(shape output)
+		(at 154.94 148.59 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f82c8ba-c0e5-4e61-bbba-9e15e1c4b0f0")
+	)
+	(hierarchical_label "ROW2"
+		(shape input)
+		(at 107.95 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "674dcfcd-c677-45a6-8a79-6461d4e5bcd8")
+	)
+	(hierarchical_label "ROW0"
+		(shape input)
+		(at 107.95 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97e218b3-c7ac-4f54-aba0-53b2f00e1da1")
+	)
+	(hierarchical_label "COL3"
+		(shape output)
+		(at 172.72 148.59 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a97366fa-ac0a-4f4f-b7a1-fdb152fd5b30")
+	)
+	(hierarchical_label "COL0"
+		(shape output)
+		(at 119.38 148.59 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f073de21-5b6c-4305-866a-bb28e8d7b3f0")
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 157.48 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00dbbc23-308b-4c68-9ae3-40b6740d0edc")
+		(property "Reference" "D207"
+			(at 160.02 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 160.02 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2770d9f7-cb1e-427c-b9b1-1120e2c44d50")
+		)
+		(pin "1"
+			(uuid "d16964db-8665-47d6-a5d4-70c5ef3e42e6")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 182.88 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14b88199-6208-44c2-b835-6da6fe6b448b")
+		(property "Reference" "SW212"
+			(at 182.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 182.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 182.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 182.88 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22c9092d-1cf4-48b5-b48e-2af2fa194517")
+		)
+		(pin "2"
+			(uuid "67cdd757-9742-4b48-b8c0-39795a583644")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1537b20e-f798-49f5-8160-2762b125a404")
+		(property "Reference" "SW211"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e32e7181-0518-40a9-8400-f8aa3897e51b")
+		)
+		(pin "2"
+			(uuid "41947037-8bf9-4e1e-a512-e9d156c21a8a")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17c5cc04-6b84-4497-8124-229e1482b9d1")
+		(property "Reference" "D210"
+			(at 142.24 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 142.24 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 139.7 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b299fa8f-1c1c-4983-909a-a54222aa4f42")
+		)
+		(pin "1"
+			(uuid "d1db462e-054d-4ac6-83af-5692c720bc18")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 175.26 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b65a7c8-25fb-44d1-9c79-7bb9bf12e5a9")
+		(property "Reference" "D216"
+			(at 177.8 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 177.8 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "994cd760-72b0-40b6-967f-a026df49b8ba")
+		)
+		(pin "1"
+			(uuid "ccb2f584-bbe6-4243-93ff-3fcc29727e38")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 129.54 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c1fe6f7-7e4b-40e2-bb52-1c7966a86503")
+		(property "Reference" "SW209"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 129.54 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6280b1cc-258c-41c8-8bdd-e3ff063beaa5")
+		)
+		(pin "2"
+			(uuid "2de82e8b-8e6a-40a6-ad53-657bc58308a2")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e63da46-b525-4e75-97f0-7dfa18cfa3e8")
+		(property "Reference" "D206"
+			(at 142.24 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 142.24 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0cb66367-bead-42f1-80e3-7a3a53300a00")
+		)
+		(pin "1"
+			(uuid "37af2008-33cf-468d-a163-75cfb91e92ce")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 121.92 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27eb6c1c-5fdb-4890-8cdd-839e261a848f")
+		(property "Reference" "D205"
+			(at 124.46 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 124.46 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e509672f-98e2-47df-835f-6af833a5927c")
+		)
+		(pin "1"
+			(uuid "8b3ebfa1-189e-4874-9f74-46acc062a3ca")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 175.26 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29611a9b-c121-4c95-941c-d9a9f3118060")
+		(property "Reference" "D208"
+			(at 177.8 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 177.8 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9711722a-88ad-48b0-acbc-92e822cb304e")
+		)
+		(pin "1"
+			(uuid "73f120f4-f80f-4e83-8e11-c3abf1b725d2")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c065bd5-36f0-4982-9fce-35c2d564d526")
+		(property "Reference" "D214"
+			(at 142.24 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 142.24 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95e160f8-0c2e-4a98-9b5c-bdc8319b33cf")
+		)
+		(pin "1"
+			(uuid "ece4979a-8bec-4860-af42-e50a5a0db249")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 157.48 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c4a44f0-0946-46ed-9341-1b609ca37fb3")
+		(property "Reference" "D211"
+			(at 160.02 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 160.02 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7a1f9f5-c9da-4e31-9927-995b57ff6ca2")
+		)
+		(pin "1"
+			(uuid "3b2cda42-edf5-4d2e-a90b-9ca54bda460e")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f04d97b-c75e-4db0-acf9-d6d1fe63c967")
+		(property "Reference" "SW206"
+			(at 147.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 147.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08d3649b-01ca-4391-bd20-5362f0d1b078")
+		)
+		(pin "2"
+			(uuid "f5550c09-b207-4eda-afb1-e0fb16e65286")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 175.26 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "477b4f4d-22d0-4c19-b4f9-91e7ffe4e7dc")
+		(property "Reference" "D204"
+			(at 177.8 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 177.8 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3147ad1c-5266-40a3-83f2-22462364baff")
+		)
+		(pin "1"
+			(uuid "0882533d-4cc2-4ae1-b838-e06102e4a81c")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 121.92 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a5326b0-dcdb-44fe-92ca-215671893553")
+		(property "Reference" "D201"
+			(at 124.46 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 124.46 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78871153-5aca-4be8-bfc4-92da76d3085a")
+		)
+		(pin "1"
+			(uuid "5f4a7d98-e384-4bb7-9f62-9e130bac778e")
+		)
+		(instances
+			(project ""
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a21a968-2c9e-4b52-943f-78852ca1cabd")
+		(property "Reference" "SW214"
+			(at 147.32 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 147.32 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5891697-d33d-4373-8d78-35cfea35b613")
+		)
+		(pin "2"
+			(uuid "e295586a-ec98-4f98-a762-822271cdc483")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61b8379d-23eb-4243-88d3-fe1d2f603338")
+		(property "Reference" "SW203"
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b7afb81-6c54-4d08-9779-6ce228a4c32b")
+		)
+		(pin "2"
+			(uuid "ade5e08b-3f35-432b-9006-f89698fc7dc7")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 157.48 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70fc2285-3b54-450d-8e82-d6c0506c9030")
+		(property "Reference" "D203"
+			(at 160.02 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 160.02 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fddd21dc-e18f-47fd-92ea-75a7bd97ce79")
+		)
+		(pin "1"
+			(uuid "6395c551-214b-4d63-80a5-a30d2cdd9798")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86a839fb-4d3e-446f-99a5-23b7f0c52265")
+		(property "Reference" "SW207"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63d383d6-b9f9-4f8f-97d3-c1d8d0380585")
+		)
+		(pin "2"
+			(uuid "6e34c0f9-849e-413e-ab10-04921e6e58d6")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 165.1 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a569acf-ab55-4869-b9b1-2b4bd5af0eac")
+		(property "Reference" "SW215"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 165.1 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "115c8c3b-c162-48db-9d2f-5bb2c5cab7a2")
+		)
+		(pin "2"
+			(uuid "6b3ef24a-9c58-4585-b26f-25f328dcc0c4")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 182.88 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9373a965-132a-42c3-a3ab-3a844d74516f")
+		(property "Reference" "SW204"
+			(at 182.88 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 182.88 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 182.88 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 182.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee7f8d5c-5006-4899-a3bf-096b4e6d5c68")
+		)
+		(pin "2"
+			(uuid "1fd9ee9b-de53-48d8-b9b3-744328c139fb")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 182.88 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b0db2670-12bd-4f9e-ac01-9e915d8372c8")
+		(property "Reference" "SW216"
+			(at 182.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 182.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 182.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 182.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa47fa0f-bd6f-4cd7-b059-d5980645ae83")
+		)
+		(pin "2"
+			(uuid "014b0caf-7652-4269-a1e3-963af044fa2a")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 157.48 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4165e98-e1fc-4fae-ab74-acd265ab7c47")
+		(property "Reference" "D215"
+			(at 160.02 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 160.02 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 157.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf5387f4-e8ef-4ad6-b10a-c0210b85de2b")
+		)
+		(pin "1"
+			(uuid "0425cfb5-7985-4e2a-a4a9-76bd4d5dded2")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 129.54 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8d645b5-e304-46f4-99a4-e8ddd0ff033d")
+		(property "Reference" "SW213"
+			(at 129.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 129.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 129.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 129.54 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a1e5c48-4052-4879-9319-cf137acad45e")
+		)
+		(pin "2"
+			(uuid "08382a0d-dcef-4e2f-9c88-6bd7d8954df4")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b961386f-64e6-442f-9c8d-e89d5509a0dd")
+		(property "Reference" "D202"
+			(at 142.24 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 142.24 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9e688856-b7b7-4d1a-86db-6d9597bdbbbb")
+		)
+		(pin "1"
+			(uuid "1e990c82-656e-4475-8fd4-46df755d16e4")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c075c008-3bfc-42d8-8825-d4345a28e018")
+		(property "Reference" "SW202"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c93b6f8-4f4d-4322-9954-1feb2c1fec96")
+		)
+		(pin "2"
+			(uuid "bdc1b16e-a451-4d85-b82a-7236496cb042")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 175.26 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccceefa5-8b5c-4c7b-9d2b-d9c8ff44a654")
+		(property "Reference" "D212"
+			(at 177.8 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 177.8 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 175.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 175.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 175.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a1224b8b-bd86-45a9-b464-d2bfefb37b23")
+		)
+		(pin "1"
+			(uuid "d4343e34-8836-4566-b9be-708870d9a77c")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 129.54 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf36b74d-7bd4-418f-89d7-5f64f7fddedb")
+		(property "Reference" "SW205"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 129.54 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "719d163a-8e5e-4eb2-8e08-9dd2a2828551")
+		)
+		(pin "2"
+			(uuid "a6afeb54-1098-4c25-99c5-4353c4728e35")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 121.92 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfc9860a-2e99-4667-8d30-d826a8383e2c")
+		(property "Reference" "D213"
+			(at 124.46 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 124.46 140.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d181cb9a-39cf-4b64-9f16-e9e2aeca2717")
+		)
+		(pin "1"
+			(uuid "a0d894a5-45e8-4faa-93ea-c94fd3ae70c5")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 182.88 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc40eddb-828c-428e-9e86-524bddd9a285")
+		(property "Reference" "SW208"
+			(at 182.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 182.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 182.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 182.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e22a2e53-6dff-4d83-b174-10b012ce8bd0")
+		)
+		(pin "2"
+			(uuid "6d6ded9e-f3c0-4405-ad2f-2928be8397dd")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 121.92 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de8306a9-354f-49cc-bd0e-95b2db24fd26")
+		(property "Reference" "D209"
+			(at 124.46 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 124.46 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab73edfa-f099-4979-8376-73ed797618b7")
+		)
+		(pin "1"
+			(uuid "6a3af612-3556-4486-b159-990471ea73d4")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f90ad855-9beb-43b9-892d-4d1ab4ad126c")
+		(property "Reference" "SW210"
+			(at 147.32 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 147.32 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bdb7eda-e5a4-4110-9485-924631a5b425")
+		)
+		(pin "2"
+			(uuid "6e8a203f-5f0b-4f69-b206-8fd4053feda9")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 129.54 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f96f6f32-d473-44dd-acba-b1ee65b7c4a9")
+		(property "Reference" "SW201"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "PCM_Switch_Keyboard_Cherry_MX:SW_Cherry_MX_PCB_1.00u"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94bccb38-73a3-4b44-8ac4-2027e18d3df5")
+		)
+		(pin "2"
+			(uuid "e79a7d52-4237-405a-9a6e-423cf33969f5")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "SW201")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
