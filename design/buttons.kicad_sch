@@ -10,7 +10,7 @@
 		(company "Hinkle Inc.")
 	)
 	(lib_symbols
-		(symbol "Device:D"
+		(symbol "Device:D_Schottky"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
@@ -25,7 +25,7 @@
 					)
 				)
 			)
-			(property "Value" "D"
+			(property "Value" "D_Schottky"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -51,7 +51,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode"
+			(property "Description" "Schottky diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -60,25 +60,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(effects
 					(font
@@ -96,19 +78,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
 						(xy 1.27 0) (xy -1.27 0)
@@ -133,8 +103,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "D_1_1"
+			(symbol "D_Schottky_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1520,17 +1502,17 @@
 		(uuid "f073de21-5b6c-4305-866a-bb28e8d7b3f0")
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 157.48 88.9 90)
+		(lib_id "Device:D_Schottky")
+		(at 121.92 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "00dbbc23-308b-4c68-9ae3-40b6740d0edc")
-		(property "Reference" "D207"
-			(at 160.02 87.6299 90)
+		(uuid "04c381ae-d70c-4805-86f9-0156ab24a124")
+		(property "Reference" "D201"
+			(at 124.46 62.5474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1538,8 +1520,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 160.02 90.1699 90)
+		(property "Value" "1N5819W"
+			(at 124.46 65.0874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1547,8 +1529,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 157.48 88.9 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 121.92 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1556,8 +1538,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 157.48 88.9 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 121.92 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1565,43 +1547,95 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 157.48 88.9 0)
+		(property "Description" "Schottky diode"
+			(at 121.92 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 157.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 157.48 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2770d9f7-cb1e-427c-b9b1-1120e2c44d50")
 		)
 		(pin "1"
-			(uuid "d16964db-8665-47d6-a5d4-70c5ef3e42e6")
+			(uuid "42923ad0-5163-46ca-9ea0-2cd1315780ff")
+		)
+		(pin "2"
+			(uuid "ba5d6fbc-5828-407b-980a-68de06fed73a")
+		)
+		(instances
+			(project ""
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 139.7 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e8dae53-1f6c-44bb-9e99-54e1b14f6886")
+		(property "Reference" "D214"
+			(at 142.24 138.7474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 142.24 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 139.7 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8305898e-1190-48a9-b3c6-96673819a345")
+		)
+		(pin "2"
+			(uuid "749dcfd6-20a0-4f69-916e-b375efd217ae")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D207")
+					(reference "D214")
 					(unit 1)
 				)
 			)
@@ -1744,17 +1778,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 139.7 114.3 90)
+		(lib_id "Device:D_Schottky")
+		(at 139.7 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "17c5cc04-6b84-4497-8124-229e1482b9d1")
-		(property "Reference" "D210"
-			(at 142.24 113.0299 90)
+		(uuid "155f248d-6a11-45cb-8706-a71b47cd7858")
+		(property "Reference" "D206"
+			(at 142.24 87.9474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1762,8 +1796,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 142.24 115.5699 90)
+		(property "Value" "1N5819W"
+			(at 142.24 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1771,8 +1805,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.7 114.3 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.7 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1780,8 +1814,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 114.3 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 139.7 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1789,131 +1823,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 139.7 114.3 0)
+		(property "Description" "Schottky diode"
+			(at 139.7 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 139.7 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b299fa8f-1c1c-4983-909a-a54222aa4f42")
 		)
 		(pin "1"
-			(uuid "d1db462e-054d-4ac6-83af-5692c720bc18")
+			(uuid "b5aac978-9525-47dd-9cb3-fdb56b26acd9")
+		)
+		(pin "2"
+			(uuid "aad78daa-7b8d-47eb-b8bd-f5c8d6e065f5")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D210")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 175.26 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b65a7c8-25fb-44d1-9c79-7bb9bf12e5a9")
-		(property "Reference" "D216"
-			(at 177.8 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 177.8 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 175.26 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "994cd760-72b0-40b6-967f-a026df49b8ba")
-		)
-		(pin "1"
-			(uuid "ccb2f584-bbe6-4243-93ff-3fcc29727e38")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D216")
+					(reference "D206")
 					(unit 1)
 				)
 			)
@@ -1988,17 +1916,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 139.7 88.9 90)
+		(lib_id "Device:D_Schottky")
+		(at 121.92 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1e63da46-b525-4e75-97f0-7dfa18cfa3e8")
-		(property "Reference" "D206"
-			(at 142.24 87.6299 90)
+		(uuid "2e3c04e6-e3d9-445b-8b16-2a8f591fb3cc")
+		(property "Reference" "D209"
+			(at 124.46 113.3474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2006,8 +1934,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 142.24 90.1699 90)
+		(property "Value" "1N5819W"
+			(at 124.46 115.8874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,8 +1943,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.7 88.9 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 121.92 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,8 +1952,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 88.9 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 121.92 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,395 +1961,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 139.7 88.9 0)
+		(property "Description" "Schottky diode"
+			(at 121.92 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0cb66367-bead-42f1-80e3-7a3a53300a00")
 		)
 		(pin "1"
-			(uuid "37af2008-33cf-468d-a163-75cfb91e92ce")
+			(uuid "08c8da96-a2a5-494d-9c22-050f4c6964cf")
+		)
+		(pin "2"
+			(uuid "abda6389-abc1-485a-aa4d-81af0577a427")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 121.92 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27eb6c1c-5fdb-4890-8cdd-839e261a848f")
-		(property "Reference" "D205"
-			(at 124.46 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 124.46 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 121.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 121.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e509672f-98e2-47df-835f-6af833a5927c")
-		)
-		(pin "1"
-			(uuid "8b3ebfa1-189e-4874-9f74-46acc062a3ca")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 175.26 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29611a9b-c121-4c95-941c-d9a9f3118060")
-		(property "Reference" "D208"
-			(at 177.8 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 177.8 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9711722a-88ad-48b0-acbc-92e822cb304e")
-		)
-		(pin "1"
-			(uuid "73f120f4-f80f-4e83-8e11-c3abf1b725d2")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 139.7 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c065bd5-36f0-4982-9fce-35c2d564d526")
-		(property "Reference" "D214"
-			(at 142.24 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 142.24 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 139.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 139.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "95e160f8-0c2e-4a98-9b5c-bdc8319b33cf")
-		)
-		(pin "1"
-			(uuid "ece4979a-8bec-4860-af42-e50a5a0db249")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D214")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 157.48 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c4a44f0-0946-46ed-9341-1b609ca37fb3")
-		(property "Reference" "D211"
-			(at 160.02 113.0299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 160.02 115.5699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 157.48 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 157.48 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 157.48 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b7a1f9f5-c9da-4e31-9927-995b57ff6ca2")
-		)
-		(pin "1"
-			(uuid "3b2cda42-edf5-4d2e-a90b-9ca54bda460e")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D211")
+					(reference "D209")
 					(unit 1)
 				)
 			)
@@ -2496,7 +2054,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "Device:D_Schottky")
 		(at 175.26 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2504,9 +2062,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "477b4f4d-22d0-4c19-b4f9-91e7ffe4e7dc")
+		(uuid "41ef161c-3ffb-49c7-be55-a4b936bc9023")
 		(property "Reference" "D204"
-			(at 177.8 62.2299 90)
+			(at 177.8 62.5474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2514,8 +2072,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 177.8 64.7699 90)
+		(property "Value" "1N5819W"
+			(at 177.8 65.0874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2523,7 +2081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 175.26 63.5 0)
 			(effects
 				(font
@@ -2532,7 +2090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
 			(at 175.26 63.5 0)
 			(effects
 				(font
@@ -2541,7 +2099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" "Schottky diode"
 			(at 175.26 63.5 0)
 			(effects
 				(font
@@ -2549,30 +2107,12 @@
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3147ad1c-5266-40a3-83f2-22462364baff")
 		)
 		(pin "1"
-			(uuid "0882533d-4cc2-4ae1-b838-e06102e4a81c")
+			(uuid "163dd52d-5452-4fb2-bfe4-e3b5de567f98")
+		)
+		(pin "2"
+			(uuid "a764dc37-6644-4227-b8d3-9c91a4fe9bb3")
 		)
 		(instances
 			(project "controller"
@@ -2584,17 +2124,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 121.92 63.5 90)
+		(lib_id "Device:D_Schottky")
+		(at 139.7 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4a5326b0-dcdb-44fe-92ca-215671893553")
-		(property "Reference" "D201"
-			(at 124.46 62.2299 90)
+		(uuid "46d3dd29-5ca4-46ec-8c22-dbddbf76d557")
+		(property "Reference" "D210"
+			(at 142.24 113.3474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2602,8 +2142,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 124.46 64.7699 90)
+		(property "Value" "1N5819W"
+			(at 142.24 115.8874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2611,8 +2151,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.92 63.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2620,8 +2160,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 121.92 63.5 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2629,43 +2169,95 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 121.92 63.5 0)
+		(property "Description" "Schottky diode"
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 121.92 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "78871153-5aca-4be8-bfc4-92da76d3085a")
 		)
 		(pin "1"
-			(uuid "5f4a7d98-e384-4bb7-9f62-9e130bac778e")
+			(uuid "1b7c908b-4a55-423c-a951-5eebe6cc7f0f")
+		)
+		(pin "2"
+			(uuid "bb8f6f93-f6da-4346-baef-eeeb90d40837")
 		)
 		(instances
-			(project ""
+			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D201")
+					(reference "D210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 157.48 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50fbabfc-6f36-4529-8170-2c6f081bb944")
+		(property "Reference" "D203"
+			(at 160.02 62.5474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 160.02 65.0874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d060e81-0584-4855-b769-c4c738cabd99")
+		)
+		(pin "2"
+			(uuid "42a1f817-1f6b-427c-9632-c737a632e6bd")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D203")
 					(unit 1)
 				)
 			)
@@ -2808,17 +2400,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 157.48 63.5 90)
+		(lib_id "Device:D_Schottky")
+		(at 157.48 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "70fc2285-3b54-450d-8e82-d6c0506c9030")
-		(property "Reference" "D203"
-			(at 160.02 62.2299 90)
+		(uuid "7b852db7-3902-48df-84f6-313377905701")
+		(property "Reference" "D215"
+			(at 160.02 138.7474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2826,8 +2418,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 160.02 64.7699 90)
+		(property "Value" "1N5819W"
+			(at 160.02 141.2874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2835,8 +2427,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 157.48 63.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 157.48 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2844,8 +2436,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 157.48 63.5 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 157.48 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2853,43 +2445,95 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 157.48 63.5 0)
+		(property "Description" "Schottky diode"
+			(at 157.48 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 157.48 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 157.48 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fddd21dc-e18f-47fd-92ea-75a7bd97ce79")
 		)
 		(pin "1"
-			(uuid "6395c551-214b-4d63-80a5-a30d2cdd9798")
+			(uuid "030fcd7f-950e-440b-910f-82a4a6281c20")
+		)
+		(pin "2"
+			(uuid "0f32567f-6635-4939-a29a-8bb80465ea5c")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D203")
+					(reference "D215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 139.7 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83fc9c08-37a7-4831-8bb2-978253e8cdcb")
+		(property "Reference" "D202"
+			(at 142.24 62.5474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 142.24 65.0874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 139.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee44e388-2336-410f-8fb0-2011d9541a46")
+		)
+		(pin "2"
+			(uuid "476e0e6f-416c-46d2-8ca3-b854a0278b33")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D202")
 					(unit 1)
 				)
 			)
@@ -3032,6 +2676,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 121.92 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "919a6546-c3c6-400e-8f72-3a1c1ccfec06")
+		(property "Reference" "D213"
+			(at 124.46 138.7474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 124.46 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 121.92 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae541154-d0c0-495f-93df-d6837eebaa1f")
+		)
+		(pin "2"
+			(uuid "f690dc00-43e8-45ea-8d84-33d4dfb7c1c0")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 182.88 57.15 0)
 		(unit 1)
@@ -3094,6 +2808,146 @@
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
 					(reference "SW204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 175.26 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a78af2a6-4d40-4bdb-a6ea-8f1ec988b7ec")
+		(property "Reference" "D216"
+			(at 177.8 138.7474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 177.8 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 175.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d791e80-692c-48fd-9480-0820101d7373")
+		)
+		(pin "2"
+			(uuid "97c74048-bfe9-4ad8-a9ec-50c019ce1d8d")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 157.48 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a80839de-7949-4959-a09f-0349764b64f4")
+		(property "Reference" "D207"
+			(at 160.02 87.9474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 160.02 90.4874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12c99b1b-2a0d-4773-943b-03ad29aa5e99")
+		)
+		(pin "2"
+			(uuid "e22040b8-6524-4027-8b32-9e04e266cc5d")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D207")
 					(unit 1)
 				)
 			)
@@ -3168,94 +3022,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 157.48 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4165e98-e1fc-4fae-ab74-acd265ab7c47")
-		(property "Reference" "D215"
-			(at 160.02 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 160.02 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 157.48 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bf5387f4-e8ef-4ad6-b10a-c0210b85de2b")
-		)
-		(pin "1"
-			(uuid "0425cfb5-7985-4e2a-a4a9-76bd4d5dded2")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D215")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 129.54 133.35 0)
 		(unit 1)
@@ -3324,17 +3090,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 139.7 63.5 90)
+		(lib_id "Device:D_Schottky")
+		(at 175.26 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b961386f-64e6-442f-9c8d-e89d5509a0dd")
-		(property "Reference" "D202"
-			(at 142.24 62.2299 90)
+		(uuid "ba2499e8-c219-4fb0-8b4e-8812a651ed45")
+		(property "Reference" "D212"
+			(at 177.8 113.3474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,8 +3108,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 142.24 64.7699 90)
+		(property "Value" "1N5819W"
+			(at 177.8 115.8874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,8 +3117,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.7 63.5 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 175.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,8 +3126,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 63.5 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 175.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3369,43 +3135,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 139.7 63.5 0)
+		(property "Description" "Schottky diode"
+			(at 175.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 139.7 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9e688856-b7b7-4d1a-86db-6d9597bdbbbb")
 		)
 		(pin "1"
-			(uuid "1e990c82-656e-4475-8fd4-46df755d16e4")
+			(uuid "eca2768a-2440-4119-b6d6-2d4744706af6")
+		)
+		(pin "2"
+			(uuid "2ba57eed-9d43-4860-bba8-c5cd23b7e2be")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D202")
+					(reference "D212")
 					(unit 1)
 				)
 			)
@@ -3480,17 +3228,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 175.26 114.3 90)
+		(lib_id "Device:D_Schottky")
+		(at 157.48 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ccceefa5-8b5c-4c7b-9d2b-d9c8ff44a654")
-		(property "Reference" "D212"
-			(at 177.8 113.0299 90)
+		(uuid "c656cf3c-0805-45d6-ade9-ef1e77055c01")
+		(property "Reference" "D211"
+			(at 160.02 113.3474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3498,8 +3246,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 177.8 115.5699 90)
+		(property "Value" "1N5819W"
+			(at 160.02 115.8874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3507,8 +3255,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 175.26 114.3 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 157.48 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3516,8 +3264,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 175.26 114.3 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 157.48 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3525,43 +3273,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 175.26 114.3 0)
+		(property "Description" "Schottky diode"
+			(at 157.48 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 175.26 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a1224b8b-bd86-45a9-b464-d2bfefb37b23")
 		)
 		(pin "1"
-			(uuid "d4343e34-8836-4566-b9be-708870d9a77c")
+			(uuid "51848464-0eb3-4c01-9a07-82b1a2d8d3c2")
+		)
+		(pin "2"
+			(uuid "38cefe73-6fde-4211-ab7f-7ae4b0649b96")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D212")
+					(reference "D211")
 					(unit 1)
 				)
 			)
@@ -3636,94 +3366,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 121.92 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cfc9860a-2e99-4667-8d30-d826a8383e2c")
-		(property "Reference" "D213"
-			(at 124.46 138.4299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D"
-			(at 124.46 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d181cb9a-39cf-4b64-9f16-e9e2aeca2717")
-		)
-		(pin "1"
-			(uuid "a0d894a5-45e8-4faa-93ea-c94fd3ae70c5")
-		)
-		(instances
-			(project "controller"
-				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D213")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 182.88 82.55 0)
 		(unit 1)
@@ -3792,17 +3434,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 121.92 114.3 90)
+		(lib_id "Device:D_Schottky")
+		(at 175.26 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "de8306a9-354f-49cc-bd0e-95b2db24fd26")
-		(property "Reference" "D209"
-			(at 124.46 113.0299 90)
+		(uuid "f35601a6-6ac6-4eb6-9726-9b524c010436")
+		(property "Reference" "D208"
+			(at 177.8 87.9474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,8 +3452,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
-			(at 124.46 115.5699 90)
+		(property "Value" "1N5819W"
+			(at 177.8 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3819,8 +3461,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.92 114.3 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 175.26 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3828,8 +3470,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 121.92 114.3 0)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 175.26 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,43 +3479,95 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode"
-			(at 121.92 114.3 0)
+		(property "Description" "Schottky diode"
+			(at 175.26 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Device" "D"
-			(at 121.92 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 121.92 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ab73edfa-f099-4979-8376-73ed797618b7")
 		)
 		(pin "1"
-			(uuid "6a3af612-3556-4486-b159-990471ea73d4")
+			(uuid "e676e786-bdf4-4491-a1a2-1d25e69f3569")
+		)
+		(pin "2"
+			(uuid "5b8b2824-4a47-4de0-9de7-227be98f4e21")
 		)
 		(instances
 			(project "controller"
 				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
-					(reference "D209")
+					(reference "D208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 121.92 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4224746-6d1b-4f1f-a3a7-88d702e24b9a")
+		(property "Reference" "D205"
+			(at 124.46 87.9474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819W"
+			(at 124.46 90.4874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.smc-diodes.com/propdf/1N5817W%20THRU%201N5819W%20N1756%20REV.A.pdf"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a8d103b-fd96-48a6-be77-74c07af83883")
+		)
+		(pin "2"
+			(uuid "91a77dd1-dc1a-4a76-b14a-1d29935b70c3")
+		)
+		(instances
+			(project "controller"
+				(path "/7fb878d1-0924-4871-83eb-4d19fe7a09cf/b7ac6345-9e09-4d9d-8181-79218dda5442"
+					(reference "D205")
 					(unit 1)
 				)
 			)
