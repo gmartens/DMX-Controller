@@ -4552,7 +4552,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 111.76) (xy 99.06 111.76)
+			(xy 153.67 106.68) (xy 134.62 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4672,7 +4672,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 101.6) (xy 99.06 101.6)
+			(xy 153.67 104.14) (xy 134.62 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5952,7 +5952,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 93.98) (xy 99.06 93.98)
+			(xy 153.67 93.98) (xy 134.62 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6440,13 +6440,13 @@
 		(uuid "9ee3a2c9-7a5b-4e32-9d47-357d82ed082d")
 	)
 	(label "BUTTONS_COL0"
-		(at 80.01 93.98 0)
+		(at 153.67 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ab87f486-3079-4a0b-8890-6252c31547e9")
 	)
@@ -6506,13 +6506,13 @@
 		(uuid "d1115324-5ce4-4c34-9d16-cc778734f7d4")
 	)
 	(label "BUTTONS_COL2"
-		(at 80.01 111.76 0)
+		(at 153.67 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d766d780-79f3-4007-bd3e-b26def3e6d1f")
 	)
@@ -6539,13 +6539,13 @@
 		(uuid "e0d57315-56d6-43fa-a8c7-3372fe443e1d")
 	)
 	(label "BUTTONS_COL1"
-		(at 80.01 101.6 0)
+		(at 153.67 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ed1fa042-935d-4820-99bc-a03169e7ef16")
 	)
