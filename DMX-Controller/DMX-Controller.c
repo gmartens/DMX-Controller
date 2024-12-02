@@ -3,10 +3,17 @@
 #include "hardware/timer.h"
 #include "hardware/clocks.h"
 #include "hardware/uart.h"
+#include "hardware/sync.h"
+
+#include "buttons.h"
 
 #define UART0_BAUD_RATE 9600
 #define UART0_TX_PIN 12
 #define UART0_RX_PIN 13
+
+#define UART1_BAUD_RATE 250000
+#define UART1_TX_PIN 20
+#define UART1_RX_PIN 21
 
 #define ROW0 1
 #define ROW1 3
@@ -95,28 +102,72 @@ void init_buttons() {
     gpio_set_pulls(COL3, false, true);
 }
 
+uint8_t channels[512] = {0};
+void dmx_transmit_frame() {
+    // Disable interrupts during transmission
+    uint32_t saved_interrupts = save_and_disable_interrupts();
+    
+    // Send BREAK signal
+    uart_set_baudrate(uart1, 45454);  // ~88us break
+    uart_putc_raw(uart1, 0x00);
+    
+    // Reset to DMX standard baud rate
+    uart_set_baudrate(uart1, UART1_BAUD_RATE);
+
+    restore_interrupts(saved_interrupts);
+    sleep_us(12);
+    saved_interrupts = save_and_disable_interrupts();
+    gpio_put(25, !gpio_get(25)); 
+    // Send start code
+    uart_putc_raw(uart1, 0x00);
+
+    // Send channel data
+    uart_write_blocking(uart1, channels, 512);
+    restore_interrupts(saved_interrupts);
+}
+
+void dmx_set_channel(uint16_t channel, uint8_t value) {
+    // Validate channel and value
+    if (channel < 1 || channel > 512) {
+        return;  // Channel out of range
+    }
+    
+    // Set channel value (adjust for 0-based indexing)
+    channels[channel - 1] = value;
+}
+
 int main()
 {
+    gpio_init(25);
+    gpio_set_dir(25, GPIO_OUT);
     stdio_usb_init();
+
+    uart_init(uart0, UART0_BAUD_RATE);
+    gpio_set_function(UART0_TX_PIN, UART_FUNCSEL_NUM(uart0, UART0_TX_PIN));
+    gpio_set_function(UART0_RX_PIN, UART_FUNCSEL_NUM(uart0, UART0_RX_PIN));
+    uart_set_hw_flow(uart0, false, false);
+
+    uart_init(uart1, UART1_BAUD_RATE);
+    gpio_set_function(UART1_TX_PIN, UART_FUNCSEL_NUM(uart1, UART1_TX_PIN));
+    gpio_set_function(UART1_RX_PIN, UART_FUNCSEL_NUM(uart1, UART1_RX_PIN));
+    uart_set_hw_flow(uart1, false, false);
+    uart_set_format(uart1, 8, 2, UART_PARITY_NONE);
+    
+    init_buttons();
 
     repeating_timer_t button_scan_repeating_timer;
     add_repeating_timer_ms(1, button_scan, NULL, &button_scan_repeating_timer);
 
-    // Set up our UART
-    uart_init(uart0, UART0_BAUD_RATE);
-    // Set the TX and RX pins by using the function select on the GPIO
-    // Set datasheet for more information on function select
-    gpio_set_function(UART0_TX_PIN, UART_FUNCSEL_NUM(uart0, UART0_TX_PIN));
-    gpio_set_function(UART0_RX_PIN, UART_FUNCSEL_NUM(uart0, UART0_RX_PIN));
-    uart_set_hw_flow(uart0, false, false);
-    
-    init_buttons();
+    gpio_put(25, 1);
 
-    char BUF[128];
     while (true) {
-        printf("%d\n", buttons);
-        sleep_ms(1000);
+        dmx_set_channel(1, B2_bm&buttons ? 255 : 0);
+        dmx_set_channel(2, B6_bm&buttons ? 255 : 0);
+        dmx_set_channel(3, B10_bm&buttons ? 255 : 0);
 
-        uart_puts(uart0, "Hello, UART!\n");
+        dmx_set_channel(7, B13_bm&buttons ? 0 : 255);
+
+        dmx_transmit_frame();
+        sleep_ms(25);
     }
 }
