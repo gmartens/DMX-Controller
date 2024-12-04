@@ -57,6 +57,10 @@ target_include_directories(DMX-Controller PRIVATE
 target_link_libraries(DMX-Controller 
         hardware_timer
         hardware_clocks
+        hardware_sync
+        hardware_adc
+        hardware_uart
+        hardware_pwm
         )
 
 pico_add_extra_outputs(DMX-Controller)

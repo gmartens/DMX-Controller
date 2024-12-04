@@ -47,16 +47,28 @@ void bleInit(const char *name) {
     //Send command to remove all previously declared BLE services
     usart0WriteCommand("PZ\r\n");
     usart0ReadUntil(buf, BLE_RADIO_PROMPT);
+    
+//    usart0WriteCommand("R,1\r\n");
+//    usart0ReadUntil(buf, "%REBOOT%");
+//    
+//    usart0WriteCommand("$$$");
+//    usart0ReadUntil(buf, BLE_RADIO_PROMPT);
 
     // Add a new service. Feel free to use any ID you want from the
     // BLE assigned numbers document. Avoid the "generic" services.
-    usart0WriteCommand("PS,1810\r\n");
+    usart0WriteCommand("PS,1812\r\n");
     usart0ReadUntil(buf, BLE_RADIO_PROMPT);
 
     // Add a new characteristic to the service for your accelerometer
     // data. Pick any ID you want from the BLE assigned numbers document.
     // Avoid the "generic" characteristics.
-    usart0WriteCommand("PC,2AE4,0A,04\r\n");
+    usart0WriteCommand("PC,2BE2,0A,04\r\n");
+    usart0ReadUntil(buf, BLE_RADIO_PROMPT);
+    
+    usart0WriteCommand("PC,2BE2,0A,04\r\n");
+    usart0ReadUntil(buf, BLE_RADIO_PROMPT);
+    
+    usart0WriteCommand("PC,2BE2,0A,04\r\n");
     usart0ReadUntil(buf, BLE_RADIO_PROMPT);
 
     // Set the characteristic's initial value to hex "00".
@@ -75,9 +87,10 @@ int main() {
     
     char buf[BUF_SIZE];
     while (1) {
-        usart1ReadUntil(buf, "\n");
-        usart0WriteCommand("SHW,0072,99\r\n");
+        usart0WriteCommand("SHR,0072\r\n");
         usart0ReadUntil(buf, BLE_RADIO_PROMPT);
+        
+        usart1WriteCommand(buf);
         _delay_ms(1000);
     }
 }
