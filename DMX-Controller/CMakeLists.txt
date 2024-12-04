@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(DMX-Controller DMX-Controller.c )
+add_executable(DMX-Controller DMX-Controller.c buttons.c faders.c dmx.c)
 
 pico_set_program_name(DMX-Controller "DMX-Controller")
 pico_set_program_version(DMX-Controller "0.1")
@@ -61,6 +61,7 @@ target_link_libraries(DMX-Controller
         hardware_adc
         hardware_uart
         hardware_pwm
+        pico_multicore
         )
 
 pico_add_extra_outputs(DMX-Controller)

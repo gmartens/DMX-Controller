@@ -1,5 +1,7 @@
 #pragma once
 
+#include "pico/stdlib.h"
+
 #define B1_bm  0b0000000000000001 // 1
 #define B5_bm  0b0000000000000010 // 2
 #define B9_bm  0b0000000000000100 // 4
@@ -16,3 +18,13 @@
 #define B7_bm  0b0010000000000000 // 8192
 #define B11_bm 0b0100000000000000 // 16384
 #define B15_bm 0b1000000000000000 // 32768
+
+typedef struct {
+    volatile uint16_t buttons;
+    uint8_t row_pins[4];
+    uint8_t column_pins[4];
+    uint8_t _step;
+    repeating_timer_t* _timer;
+} button_board_t;
+
+void button_init(button_board_t* buttons, repeating_timer_t* timer, uint8_t row0, uint8_t row1, uint8_t row2, uint8_t row3, uint8_t col0, uint8_t col1, uint8_t col2, uint8_t col3);
